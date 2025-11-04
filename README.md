@@ -1,13 +1,13 @@
 # Desafio de Testes Automatizados - Cypress
 
-O desafio consiste em propor a automatização de uma funcionalidade do site http://lojaebac.ebaconline.art.br/ utilizando o framework **Cypress**.
+O desafio consiste em propor a automatização de uma funcionalidade (processo completo de compra de um produto) do site http://lojaebac.ebaconline.art.br/ utilizando o framework **Cypress**.
 
 ---
 
 ## Instalação das dependências
 
 1. **Clone o repositório**:
-   git clone https://github.com/seu-usuario/desafio-cypress-QA.git
+   git clone https://github.com/renanbodnar/desafio-cypress-QA.git
 
 2. **Acesse o diretório do projeto**:
    cd desafio-cypress-QA
