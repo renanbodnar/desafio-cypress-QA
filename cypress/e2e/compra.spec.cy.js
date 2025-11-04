@@ -1,3 +1,5 @@
+// Teste que simula o processo de compra de um item ate o final
+
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false;
 });
@@ -37,5 +39,15 @@ describe('template spec', () => {
     cy.get('[name="terms"]').check();
     // finalizacao do pedido
     cy.get('[name="woocommerce_checkout_place_order"]').click();
+    //cy.get('#main h1.page-title').click();
+    //cy.get('#main p.woocommerce-notice').click();
+    //cy.get('#main li.order strong').click();
+    cy.get('#main p.woocommerce-notice')
+      .invoke('text')
+      .then((texto) => {
+        cy.log(texto) // mostra no log do Cypress
+        // faz algo com o texto
+        expect(texto).to.include('Obrigado. Seu pedido foi recebido.')
+      })
   })
 })
